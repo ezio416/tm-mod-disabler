@@ -7,7 +7,7 @@ This plugin works simply by creating a folder called `C:/Users/USERNAME/Document
 ## Regarding custom skid marks
 
 ### Skid Marks Manager
-SMM uses the ModWork folder to apply skids, and therefore disables texture mods on its own. If you use SMM, using Mod Disabler adds the benefit of preserving the contents of the ModWork folder if you decide you want to play with mods again.
+SMM uses the ModWork folder to apply skids, and therefore disables texture mods on its own. If you use SMM, using Mod Disabler adds the benefit of preserving the contents of the ModWork folder (SMM deletes everything when removing all custom skids).
 
 ### Modless Skids
 Since MS does not use the ModWork folder, those skids will be unaffected by Mod Disabler.
