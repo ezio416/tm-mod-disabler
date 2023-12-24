@@ -27,8 +27,8 @@ void SetEnabled(bool enable) {
         } else {
             if (IO::FolderExists(modWorkFolderBackup)) {
                 if (modWorkExists) {
-                    trace("Deleting ModWork_Backup (empty)...");
-                    IO::DeleteFolder(modWorkFolderBackup);
+                    trace("Deleting ModWork (empty)...");
+                    IO::DeleteFolder(modWorkFolder);
                 }
 
                 Notify("ModWork_Backup exists, renaming to ModWork...");
