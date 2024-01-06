@@ -1,3 +1,7 @@
+![Signed](https://img.shields.io/badge/Signed-Yes-00AA00)
+![Number of downloads](https://img.shields.io/badge/dynamic/json?query=downloads&url=https%3A%2F%2Fopenplanet.dev%2Fapi%2Fplugin%2F473&label=Downloads&color=purple)
+![Version](https://img.shields.io/badge/dynamic/json?query=version&url=https%3A%2F%2Fopenplanet.dev%2Fapi%2Fplugin%2F473&label=Version&color=red)
+![Game Trackmania](https://img.shields.io/badge/Game-Trackmania-blue)
 # Mod Disabler
 
 There is an in-game setting to disable Texture Mod downloads, but this doesn't do anything if a mod is already loaded. This plugin lets you disable mods altogether if you're unhappy with them, for instance when you play COTD, get used to the map during the qualifier, then suddenly in rounds you have to play with a mod which makes the map look totally different.
