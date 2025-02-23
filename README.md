@@ -9,12 +9,15 @@ There is an in-game setting to disable Texture Mod downloads, but this doesn't d
 
 This plugin works simply by creating a folder called `C:/Users/USERNAME/Documents/Trackmania/Skins/Stadium/ModWork`. When this folder exists, the game thinks you're creating your own mod, so it disables the loading of any others. This plugin also handles the case where you already have this folder, and will rename it to "ModWork_Backup" so your contents are not lost.
 
-## Regarding custom skid marks
+## Regarding other plugins
 
 ### Skid Marks Manager
 SMM uses the ModWork folder to apply skids, and therefore disables texture mods on its own. If you use SMM, using Mod Disabler adds the benefit of preserving the contents of the ModWork folder (SMM deletes everything when removing all custom skids).
 
 ### Modless Skids
 Since MS does not use the ModWork folder, those skids will be unaffected by Mod Disabler.
+
+### Better Texture Mod
+BTM can be set to use ModWork or not, therefore it may or may not be affected by Mod Disabler.
 
 ![image](images/mod-disabler.png)
