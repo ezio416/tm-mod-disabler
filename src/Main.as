@@ -36,6 +36,8 @@ void SetEnabled(bool enable) {
             } else {
                 trace("Creating ModWork...");
                 IO::CreateFolder(modWorkFolder);
+                IO::File file(modWorkFolder + "/mod_disabler.txt", IO::FileMode::Write);
+                file.Close();
             }
 
             Notify("Mods disabled, exit and rejoin the map to apply changes!");
