@@ -1,5 +1,5 @@
 // c 2023-12-24
-// m 2023-12-24
+// m 2025-02-22
 
 bool modWorkContents = false;
 bool modWorkExists = false;
@@ -36,6 +36,8 @@ void SetEnabled(bool enable) {
             } else {
                 trace("Creating ModWork...");
                 IO::CreateFolder(modWorkFolder);
+                IO::File file(modWorkFolder + "/mod_disabler.txt", IO::FileMode::Write);
+                file.Close();
             }
 
             Notify("Mods disabled, exit and rejoin the map to apply changes!");
