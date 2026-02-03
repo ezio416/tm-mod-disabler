@@ -8,15 +8,17 @@ string title = "\\$F55" + Icons::Road + "\\$G Mod Disabler";
 bool S_Enabled = false;
 
 void RenderMenu() {
-    if (UI::MenuItem(title, "", S_Enabled))
+    if (UI::MenuItem(title, "", S_Enabled)) {
         SetEnabled(!S_Enabled);
+    }
 }
 
-void SetEnabled(bool enable) {
+void SetEnabled(const bool enable) {
     modWorkExists = IO::FolderExists(modWorkFolder);
     modWorkContents = false;
-    if (modWorkExists)
+    if (modWorkExists) {
         modWorkContents = IO::IndexFolder(modWorkFolder, false).Length > 0;
+    }
 
     if (enable) {
         if (modWorkContents) {
@@ -67,7 +69,7 @@ void SetEnabled(bool enable) {
     S_Enabled = !S_Enabled;
 }
 
-void Notify(const string &in msg, vec4 color = vec4(0.9f, 0.6f, 0.1f, 0.5f), int time = 5000) {
+void Notify(const string&in msg, const vec4 color = vec4(0.9f, 0.6f, 0.1f, 0.5f), const int time = 5000) {
     UI::ShowNotification(title, msg, color, time);
     trace(msg);
 }
