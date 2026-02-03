@@ -1,6 +1,3 @@
-// c 2023-12-24
-// m 2025-02-22
-
 bool modWorkContents = false;
 bool modWorkExists = false;
 string modWorkFolder = IO::FromUserGameFolder("Skins/Stadium/ModWork").Replace("\\", "/");
